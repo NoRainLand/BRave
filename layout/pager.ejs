@@ -1,0 +1,13 @@
+<div class="guide-pager">
+	<% if (page.prev) { %>
+	<a href="<%- url_for(page.prev_link) %>">
+        < 上一篇：<%- page.prev.title %>
+    </a>
+	<% } %> 
+    
+    <% if (page.next) { %>
+	<a href="<%- url_for(page.next_link) %>">
+        下一篇：<%- page.next.title %> >
+    </a>
+	<% }%>
+</div>

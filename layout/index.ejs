@@ -1,0 +1,14 @@
+<section class="posts">
+	<% page.posts.each(function (post) { %>
+	<article class="post">
+		<div class="link"></div>
+		<header class="post-title">
+			<a class="post-title-link" href="<%- url_for(post.path) %>"><%= post.title %></a>
+		</header>
+		<div class="post-meta">
+			<time class="post-time"><%- date(post.date, "YYYY-MM-DD") %></time>
+		</div>
+		<div class="post-content"><%- post.excerpt %></div>
+	</article>
+	<% }) %>
+</section>
