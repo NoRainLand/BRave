@@ -1,4 +1,13 @@
 <!-- 博客详情 -->
-<h2><%- page.title %></h2>
-<p><%- date(page.date , 'YYYY/MM/DD HH:mm:ss') %></p>
-<%- page.content %> <%- partial('pager.ejs') %>
+<div class="page">
+    <h2 class="page_title"><%- page.title %></h2>
+    <div class="post_meta">
+        <% let ndate = new Date(date(page.date).replace(/-/g,'/')); %>
+        <% let chinaDate = ndate.toDateString(); %>
+        <% let chinaDateArray = chinaDate.split(' '); %>
+        <time class="post_time"><%- `${chinaDateArray[1]} ${chinaDateArray[2]} ${chinaDateArray[3]}` %></time>
+    </div>
+    <%- page.content %>
+</div>
+<%- partial('common/pager.ejs')  %> 
+

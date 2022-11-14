@@ -1,0 +1,18 @@
+.guide-pager {
+	margin: 10px auto;
+    padding-top: 30px;
+	display: flex;
+	font-size: 1.6rem;
+	justify-content: space-around;
+	max-width: 1000px;
+	.page_prev {
+		text-decoration: none;
+		color: rgb(0, 0, 0);
+		display: block;
+	}
+	.page_next {
+		text-decoration: none;
+		color: rgb(0, 0, 0);
+		display: block;
+	}
+}

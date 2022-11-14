@@ -1,4 +1,9 @@
+//init global
+@import "variables.scss";
+
 @import "_partial/body.scss";
 @import "_partial/header.scss";
 @import "_partial/post.scss";
+@import "_partial/index.scss";
 @import "_partial/footer.scss";
+@import "_partial/pager.scss";
