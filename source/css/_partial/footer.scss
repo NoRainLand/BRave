@@ -2,16 +2,10 @@
 	max-width: 1000px;
 	font-size: 1rem;
 	margin: 0 auto;
-	color: rgb(206, 206, 206);
-
-	.link {
-		width: 100%;
-		height: 0.2px;
-		border-top: solid #d4d4d471 1px;
-	}
-
+	color: $copyright_color;
+	border-top: solid $link_color 1px;
 	.verse {
-		color: rgba(255, 255, 255, 0);
+		color: $transparent;
 		text-align: center;
 		text-overflow: ellipsis;
 		overflow: hidden;
@@ -19,18 +13,15 @@
 		height: 1.5rem;
 	}
 
-	.copyright-year {
+	.copyright_year {
 		margin: 0 auto;
 		text-align: center;
 		display: block;
 
-		.hexo-link {
+		.hexo_link,
+		.theme_link {
 			text-decoration: none;
-			color: rgb(206, 206, 206);
-		}
-		.theme-link {
-			text-decoration: none;
-			color: rgb(206, 206, 206);
+			color: $copyright_color;
 		}
 	}
 }

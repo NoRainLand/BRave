@@ -1,17 +1,17 @@
+<!-- 页脚,作者以及主题作者,版权 -->
 <footer>
 	<div class="footer">
-		<div class="link"></div>
 		<div class="verse">Do not go gentle into that good night,Old age should burn and rave at close of day;Rage, rage against the dying of the light. </div>
-		<span class="copyright-year">
+		<span class="copyright_year">
 			©️ <% let date = new Date() %> <% let year = date.getFullYear() %> <% if
 			(theme.since && theme.since != year) { %> <%= theme.since %>- <% }%> <%=
 			year %>
-			<span class="footer-author"><%= config.author %></span>
-			<span class="power-by">
+			<span class="footer_author"><%= config.author %></span>
+			<span class="power_by">
 				Powered by
-				<a class="hexo-link" href="https://hexo.io/">Hexo</a>
+				<a class="hexo_link" href="https://hexo.io/">Hexo</a>
 				and
-				<a class="theme-link" href="https://github.com/NoRainLand">NoRainLand</a>
+				<a class="theme_link" href="https://github.com/NoRainLand">NoRainLand</a>
 			</span>
 		</span>
 	</div>

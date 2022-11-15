@@ -1,3 +1,4 @@
+<!-- 主页 -->
 <section class="posts">
 	<% page.posts.each(function (post,i) { %>
 	<article class="post">
@@ -8,7 +9,7 @@
 			<% let ndate = new Date(date(post.date).replace(/-/g,'/')); %>
 			<% let chinaDate = ndate.toDateString(); %>
 			<% let chinaDateArray = chinaDate.split(' '); %>
-			<time class="post_time"><%- `${chinaDateArray[1]} ${chinaDateArray[2]} ${chinaDateArray[3]}` %></time>
+			<time class="post_time" id="post_time"><%- date(post.date) %></time>
 		</div>
 		<div class="post_content"><%- post.excerpt %></div>
 	</article>

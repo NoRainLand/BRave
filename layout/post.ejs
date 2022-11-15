@@ -1,13 +1,12 @@
 <!-- 博客详情 -->
 <div class="page">
-    <h2 class="page_title"><%- page.title %></h2>
+    <header class="page_title"><%- page.title %></header>
     <div class="post_meta">
-        <% let ndate = new Date(date(page.date).replace(/-/g,'/')); %>
-        <% let chinaDate = ndate.toDateString(); %>
-        <% let chinaDateArray = chinaDate.split(' '); %>
-        <time class="post_time"><%- `${chinaDateArray[1]} ${chinaDateArray[2]} ${chinaDateArray[3]}` %></time>
+        <time class="post_time" id="post_time"><%- date(page.date) %></time>
     </div>
-    <%- page.content %>
+    <div class="post_content">
+        <%- page.content %>
+    </div>
 </div>
-<%- partial('common/pager.ejs')  %> 
+<%- partial('common/pager.ejs')  %>
 

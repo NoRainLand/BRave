@@ -1,7 +1,7 @@
 .posts {
 	margin: $global-content-margin;
 	max-width: 860px;
-	min-height: 1200px;
+	min-height: 1100px;
 	width: 90%;
 	.post {
 		margin: $global-content-margin;
@@ -11,16 +11,16 @@
 		.post_title {
 			.post_title_link {
 				text-decoration: none;
-				color: rgb(0, 0, 0);
+				color: $title_color;
 				font-size: 1.8rem;
 			}
 		}
 		.post_time {
-			color: #a0a0a071;
+			color: $date_color;
 			font-size: 1.2rem;
 		}
 		.post_content {
-			color: #6e6e6e;
+			color: $post_content_color;
 			font-size: 1.4rem;
 			overflow: hidden;
 			text-overflow: ellipsis;
@@ -30,5 +30,5 @@
 }
 .link {
 	width: 100%;
-	border-top: solid #d4d4d471 1px;
+	border-top: solid $link_color 1px;
 }

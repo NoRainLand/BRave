@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="<%= config.language %>">
-	<head>
 		<%- partial('common/head.ejs') %>
-	</head>
 	<body>
 		<%- partial('common/header.ejs') %>
-		<div class="link-top"></div>
-		<%- partial('common/body.ejs') %>
+		<%- partial('common/mainbody.ejs') %>
 		<%- partial('common/footer.ejs') %>
+		<%- partial('common/backtotop.ejs') %>
 	</body>
+	<%- partial('common/afterfooter.ejs') %>
 </html>

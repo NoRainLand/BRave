@@ -1,0 +1,33 @@
+.archive {
+	max-width: 1000px;
+	margin: 0 auto;
+
+	.archive_year {
+		font-size: 2rem;
+		color: $title_color;
+		margin: 20px auto;
+	}
+	.archive_post {
+		margin: 10px auto;
+		display: block;
+		.archive_title {
+			font-size: 1.6rem;
+			margin-left: 20px;
+			a {
+				text-decoration: none;
+				color: $menu_color;
+			}
+		}
+		.archive_time {
+			color: $date_color;
+			font-size: 1.2rem;
+		}
+		&:hover {
+			margin-left: 10px;
+			.archive_time,
+			a {
+				color: $guide_hover_color;
+			}
+		}
+	}
+}

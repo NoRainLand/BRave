@@ -1,0 +1,17 @@
+.back_to_top {
+	color: #000;
+	display: none;
+	position: fixed;
+	bottom: 10px;
+	right: 20px;
+	z-index: 10;
+	transition-property: transform;
+	transition-timing-function: ease-out;
+	transition-duration: 0.3s;
+	.arrow_up {
+		color: rgba(0, 0, 0, 0.774);
+	}
+	&:hover {
+		transform: translateY(-5px);
+	}
+}

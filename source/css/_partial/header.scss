@@ -9,17 +9,17 @@
 	}
 	.title {
 		text-decoration: none;
-		color: #368ccb;
+		color: $logo_color;
 		font-size: 2rem;
 	}
 	.archives {
 		text-decoration: none;
-		color: rgb(150, 150, 150);
+		color: $menu_color;
 		font-size: 1rem;
 	}
 	.about {
 		text-decoration: none;
-		color: rgb(150, 150, 150);
+		color: $menu_color;
 		font-size: 1rem;
 	}
 	#menu_item {
@@ -31,5 +31,5 @@
 .link-top {
 	width: 100%;
 	height: 0.2px;
-	border-top: solid #d4d4d471 1px;
+	border-top: solid $link_color 1px;
 }
