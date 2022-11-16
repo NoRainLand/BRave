@@ -3,3 +3,19 @@ body {
 	font-size: 1.25rem;
 	line-height: 1.5;
 }
+
+@include max-screen() {
+	.site-header-inner,
+	.content {
+		width: 90%;
+	}
+	#list_tags {
+		display: none;
+	}
+
+	#index {
+		.posts {
+			width: 100%;
+		}
+	}
+}
