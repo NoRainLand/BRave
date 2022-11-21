@@ -3,6 +3,10 @@
 
 @import "_common/_utils.scss";
 //引入样式
+@import "_common/_normalize.scss";
+
+
+
 @import "_partial/layout.scss";
 @import "_partial/meta.scss";
 
@@ -21,3 +25,4 @@
 @import "_partial/archive.scss";
 @import "_partial/about.scss";
 
+@import "_common/img.scss";
