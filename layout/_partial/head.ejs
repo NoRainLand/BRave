@@ -3,7 +3,19 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title><%= config.title %></title>
+	<title>
+		<% if (is_home()) { %>
+            <%- config.title %>
+        <% } else if (is_archive()) { %>
+            <%- __('Archive') %>
+        <% } else if (is_category()) { %>
+            <%- __('Category') %> - <%- page.category %>
+        <% } else if (is_tag()) { %>
+            <%- __('Tag') %> - <%- page.tag %>
+        <% } else { %>
+            <%- page.title +" - " +config.minititle %>
+        <% } %>
+	</title>
 	<link rel="Bookmark" type="image/x-icon" href="<%- url_for(theme.favicon) %>" />
 	<link rel="icon" type="image/x-icon" href="<%- url_for(theme.favicon) %>" />
 	<link
