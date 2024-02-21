@@ -1,0 +1,47 @@
+$global_content_margin: 0 auto !default;
+
+// Global width of '<body>'.
+$global_body_width: 1100px !default;
+
+// Global width of '<content>'.
+$global_content_width: 750px !default;
+
+// Global width of '<content>'.
+$global_content_width2: 700px !default;
+
+// 颜色
+
+$menu_color: rgb(150, 150, 150);
+
+$link_color: rgba(212, 212, 212, 0.619);
+
+$title_color: rgba(0, 0, 0, 0.75);
+
+$date_color: rgba(160, 160, 160, 0.75);
+
+$post_content_color: rgba(65, 65, 65, 0.9);
+
+$guide_color: rgba(0, 0, 0, 0.9);
+
+$guide_hover_color: rgba(43, 122, 128, 0.808);
+
+$transparent: rgba(0, 0, 0, 0);
+
+$copyright_color: rgb(206, 206, 206);
+
+//miku color
+
+$miku_color1: #525658;
+
+$miku_color2: #bec8d1;
+
+$miku_color3: #86cecb;
+
+$miku_color4: #137a7f;
+
+$miku_color5: #e12885;
+
+
+
+// Font family of the site.
+$global-font-family: "LXGW WenKai" "Open Sans", "PingFang SC", "Hiragino Sans GB","Microsoft Yahei", "Microsoft Jhenghei", sans-serif !default;

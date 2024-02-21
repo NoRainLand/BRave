@@ -1,0 +1,12 @@
+.meta {
+	a {
+		text-decoration: none;
+		color: $menu_color;
+        margin: auto 5px;
+	}
+	&:hover {
+		a {
+			color: $miku_color5;
+		}
+	}
+}

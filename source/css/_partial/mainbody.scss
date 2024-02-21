@@ -1,0 +1,19 @@
+.mainbody {
+	border-top: solid $link_color 1px;
+	// margin: 0 auto;
+	// max-width: 1100px;
+	.post_content {
+		a {
+			text-decoration: none;
+			color: $miku_color3;
+		}
+	}
+	del{
+		text-decoration: line-through;
+		text-decoration-thickness:10%;
+		text-decoration-color:$miku_color1;
+	}
+	// .post_content blockquote {
+	// 	border-left: 2px solid $miku_color3;
+	// }
+}

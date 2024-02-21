@@ -1,0 +1,44 @@
+<!-- 文件头 引入css JS -->
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="UnknownMotherGoose">
+	<meta name="Keywords" content="UnknownMotherGoose">
+	<meta name="Robots" contect= "all">
+	<meta name="google-site-verification" content= <%= theme.googlesiteverification %> />
+	<title>
+		<% if (is_home()) { %>
+            <%- config.title %>
+        <% } else if (is_archive()) { %>
+            <%- __('Archive') %>
+        <% } else if (is_category()) { %>
+            <%- __('Category') %> - <%- page.category %>
+        <% } else if (is_tag()) { %>
+            <%- __('Tag') %> - <%- page.tag %>
+        <% } else { %>
+            <%- page.title +" - " +config.minititle %>
+        <% } %>
+	</title>
+	<link rel="Bookmark" type="image/x-icon" href="<%- url_for(theme.favicon) %>" />
+	<link rel="icon" type="image/x-icon" href="<%- url_for(theme.favicon) %>" />
+	<link
+		rel="shortcut icon"
+		type="image/x-icon"
+		href="<%- url_for(theme.favicon) %>"
+	/>
+	<!-- <link rel="stylesheet" href="https://cdn.staticfile.org/lxgw-wenkai-webfont/1.6.0/style.css" /> -->
+	<!-- 没有Lite version, 有需要的可以向cdnjs发pr看看能不能通过-->
+	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.1.0/style.css" /> -->
+	<!-- 没有TC version, 有需要的可以向cdnjs发pr看看能不能通过-->
+	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-tc-webfont@1.0.0/style.css" /> -->
+	<!-- Screen version -->
+	<!-- <link rel="stylesheet" href="https://cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.6.0/style.css" /> -->
+	<%- css("js/prism/prism.css")  %>
+	<%- css("css/style.css")  %>
+	<%- js("https://cdn.staticfile.org/jquery/3.6.4/jquery.min.js") %> 
+	<!-- https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js  这是cdnjs的 -->
+	<%- js("js/theme.js") %>
+	<%- js("js/miku.js") %>
+</head>
+

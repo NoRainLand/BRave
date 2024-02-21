@@ -1,0 +1,18 @@
+.page {
+	max-width: 860px;
+	width: 73%;
+	margin: 0 auto;
+	padding: 30px 0;
+	.page_title {
+		text-decoration: none;
+		color: $title_color;
+		font-size: 1.8rem;
+	}
+	.post_time {
+		color: $date_color;
+		font-size: 1.2rem;
+	}
+	p {
+		color: $post_content_color;
+	}
+}

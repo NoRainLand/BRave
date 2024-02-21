@@ -1,0 +1,52 @@
+.guide_pager {
+	margin: 10px auto;
+	display: table;
+	font-size: 1em;
+	max-width: 1000px;
+	width: 90%;
+	.page_prev,
+	.page_prev2 {
+		text-decoration: none;
+		color: $guide_color;
+		display: block;
+		position: sticky;
+		float: left;
+		left: 20%;
+		padding-left: 5px;
+		max-width: 250px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		text-align: left;
+		transition-property: padding-left;
+		transition-timing-function: ease-out;
+		transition-duration: 0.2s;
+		&:hover {
+			color: $guide_hover_color;
+			padding-left: 0px;
+		}
+	}
+
+	.page_next,
+	.page_next2 {
+		text-decoration: none;
+		color: $guide_color;
+		display: block;
+		position: sticky;
+		float: right;
+		right: 20%;
+		padding-right: 5px;
+		max-width: 250px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		text-align: right;
+		transition-property: padding-right;
+		transition-timing-function: ease-out;
+		transition-duration: 0.2s;
+		&:hover {
+			color: $guide_hover_color;
+			padding-right: 0px;
+		}
+	}
+}

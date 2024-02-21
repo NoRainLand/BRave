@@ -1,0 +1,56 @@
+.header {
+	margin: 0 auto;
+	padding: 0 10px;
+	max-width: 1100px;
+	height: 64px;
+	// .lyrics {
+	// 	height: 64px;
+	// 	position: absolute;
+	// 	font-size: 5rem;
+	// 	width: 100%;
+	// 	text-align: center;
+	// 	overflow: hidden;
+	// 	text-overflow: ellipsis;
+	// 	white-space: nowrap;
+	// }
+	.logo {
+		margin: 0;
+		.title {
+			text-decoration: none;
+			color: $miku_color4;
+			font-size: 2rem;
+		}
+		position: relative;
+		float: left;
+	}
+	.nav_top {
+		position: relative;
+		float: right;
+	}
+	.archives {
+		text-decoration: none;
+		color: $menu_color;
+		font-size: 1rem;
+	}
+	.about {
+		text-decoration: none;
+		color: $menu_color;
+		font-size: 1rem;
+	}
+	#menu_item {
+		list-style: none;
+		display: inline;
+		margin: 0.6rem;
+	}
+
+	@include max-screen2() {
+		#nav_top {
+			display: none;
+		}
+	}
+}
+.link-top {
+	width: 100%;
+	height: 0.2px;
+	border-top: solid $link_color 1px;
+}

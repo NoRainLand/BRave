@@ -1,0 +1,27 @@
+<!-- 主页 -->
+<div class="index" id="index">
+	
+	<div class="posts">
+		<% page.posts.each(function (post,i) { %>
+		<article class="post">
+			<header class="post_title">
+				<a class="post_title_link" href="<%- url_for(post.path) %>"><%= post.title %></a>
+			</header>
+			<div class="post_meta">
+				<% let ndate = new Date(date(post.date).replace(/-/g,'/')); %>
+				<% let chinaDate = ndate.toDateString(); %>
+				<% let chinaDateArray = chinaDate.split(' '); %>
+				<time class="post_time" id="post_time"><%- date(post.date) %></time>
+			</div>
+			<div class="post_content"><%- post.excerpt %></div>
+			<%- partial("_partial/meta.ejs",{item:post}) %>
+		</article>
+			<% if((i+1)%config.per_page != 0 && (i+1)!=site.posts.length) { %>
+				<div class="link"></div>
+			<% } %>
+		<% }) %>
+	</div>
+	<%- partial("_widget/listtags.ejs")  %>
+	<%- partial("mainpager.ejs")  %>
+</div>
+

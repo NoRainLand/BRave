@@ -1,0 +1,17 @@
+<div class="archive">
+	<% var last_year = ''; %>
+		<% page.posts.each(function (post) { %>
+			<% var cur_year = post.date.year(); %>
+			<% if(last_year !== cur_year){ %>
+			<div class="archive_year"><%- cur_year %></div>
+			<% last_year = cur_year; } %>
+			<div class="archive_post">
+				<span class="archive_time" id="archive_time"><%- date(post.date) %></span>
+				<span class="archive_title">
+					<a href="<%- url_for(post.path) %>">
+						<%= post.title %>
+					</a>
+				</span>
+			</div>
+		<% }) %>
+</div>

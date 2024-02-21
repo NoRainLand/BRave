@@ -1,0 +1,29 @@
+# @Author: NoRain 
+# @Date: 2022-11-13 19:16:10 
+# @Last Modified by:   NoRain 
+# @Last Modified time: 2022-11-13 19:16:10
+
+#标签页
+favicon: img/favicon.ico
+
+# 版权开始时间
+since: 2022
+
+
+#关于
+about:
+  avatars: https://avatars.githubusercontent.com/u/66503849?v=4
+  name: 无雨
+  description: "你好，我是无雨，“今年咲いた向日葵(ひまわり) それが私なんです”"
+  email: "d3V4aW5ydWZlbmdAcXEuY29t"
+  site:
+    s1: 1，为了一位朋友，
+    s2: 2，我需要一个半公开半隐秘地方写点东西，
+    s3: 3，给未来的我留下一点东西。
+
+
+marked:
+  langPrefix: line-numbers language-
+#谷歌的站点验证
+googlesiteverification:
+  "-JpC1LgBb47SU_CHMdZx7RdIvgfMrnAKoHB_UlroSFM"

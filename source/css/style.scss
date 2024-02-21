@@ -1,0 +1,35 @@
+//init global
+@import "variables.scss";
+
+@import "_common/_utils.scss";
+
+
+@import "_common/heimu.scss";
+//引入样式
+// @import "_common/_normalize.scss";
+
+
+
+@import "_partial/layout.scss";
+@import "_partial/meta.scss";
+
+
+@import "_partial/index.scss";
+
+
+@import "_partial/mainbody.scss";
+@import "_partial/header.scss";
+@import "_partial/footer.scss";
+@import "_partial/pager.scss";
+@import "_partial/post.scss";
+@import "_widget/listtags.scss";
+
+@import "_partial/backtotop.scss";
+
+@import "_partial/archive.scss";
+@import "_partial/about.scss";
+
+@import "_common/_content.scss";
+
+@import "_partial/miku.scss";
+

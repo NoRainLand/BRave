@@ -1,0 +1,18 @@
+@mixin min-screen() {
+	@media screen and (min-width: $global-body-width) {
+		@content;
+	}
+}
+
+@mixin max-screen() {
+	@media only screen and (max-width: $global-content-width) {
+		@content;
+	}
+}
+
+
+@mixin max-screen2() {
+	@media only screen and (max-width: $global-content-width2) {
+		@content;
+	}
+}

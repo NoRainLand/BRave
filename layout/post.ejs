@@ -1,0 +1,12 @@
+<!-- 博客详情 -->
+<div class="page">
+    <header class="page_title"><%- page.title %></header>
+    <div class="post_meta">
+        <time class="post_time" id="post_time"><%- date(page.date) %></time>
+    </div>
+    <div class="post_content">
+        <%- page.content %>
+    </div>
+</div>
+<%- partial('_partial/pager.ejs')  %>
+

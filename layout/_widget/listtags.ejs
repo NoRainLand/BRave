@@ -1,0 +1,6 @@
+<% if (site.tags.length){ %>
+    <div class="list_tags" id="list_tags">
+        <div class="list_title">Tags</div>
+        <%- list_tags({show_count: true, amount: 20, orderby: 'count'}) %>
+    </div>
+<% } %>

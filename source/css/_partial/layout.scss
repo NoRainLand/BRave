@@ -1,0 +1,37 @@
+body {
+	background-color: rgba(255, 255, 255, 0.75);
+	font-size: 1.25rem;
+	line-height: 1.5;
+	font-family: "PingFang SC", "Microsoft YaHei", sans-serif, Arial;
+
+	// /* Regular version */
+	// font-family: "LXGW WenKai", sans-serif;
+	// /* Lite version */
+	// font-family: "LXGW WenKai Lite", sans-serif;
+	// /* TC version */
+	// font-family: "LXGW WenKai TC", sans-serif;
+	// /* Screen version */
+	// font-family: "LXGW WenKai Screen", sans-serif;
+
+	/* 修改文本被选中时的颜色 */
+	::selection {
+		background-color: $post_content_color; /* 用蓝色背景色表示选中状态 */
+		color: #fff; /* 用白色文本颜色提高对比度 */
+	}
+}
+
+@include max-screen() {
+	.site-header-inner,
+	.content {
+		width: 90%;
+	}
+	#list_tags {
+		display: none;
+	}
+
+	#index {
+		.posts {
+			width: 100%;
+		}
+	}
+}

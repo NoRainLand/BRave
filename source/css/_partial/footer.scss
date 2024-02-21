@@ -1,0 +1,27 @@
+.footer {
+	max-width: 1100px;
+	font-size: 1rem;
+	margin: 0 auto;
+	color: $copyright_color;
+	border-top: solid $link_color 1px;
+	.verse {
+		color: $transparent;
+		text-align: center;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		font-size: 1rem;
+		height: 1.5rem;
+	}
+
+	.copyright_year {
+		margin: 0;
+		text-align: center;
+		display: block;
+
+		.hexo_link,
+		.theme_link {
+			text-decoration: none;
+			color: $copyright_color;
+		}
+	}
+}

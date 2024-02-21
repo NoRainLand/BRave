@@ -1,0 +1,41 @@
+.list_tags {
+	width: 20%;
+	padding-top: 40px;
+	// display: inline-block;
+	// right: 0px;
+	// top: 0px;
+	position: relative;
+	float: right;
+	.list_title {
+		color: $title_color;
+		font-size: 2rem;
+		padding-bottom: 5px;
+		border-bottom: solid $link_color 1px;
+	}
+	.tag-list {
+		list-style: none;
+		padding: 0;
+		.tag-list-item {
+			font-size: 1rem;
+			padding: 0 10px 7px 0;
+			text-transform: uppercase;
+			display: inline-block;
+			a {
+				text-decoration: none;
+				color: $menu_color;
+			}
+			&:hover {
+				a {
+					color: $miku_color5;
+				}
+			}
+		}
+		.tag-list-count {
+			vertical-align: top;
+			font-size: 0.6em;
+			opacity: 0.6;
+			top: -0.5em;
+			color: $title_color;
+		}
+	}
+}
