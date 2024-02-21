@@ -6,4 +6,5 @@ $(document).ready(function () {
 	// Theme.floatTags.register();
 	Theme.addHeimuTitle.register();
 	Miku.console.register();
+	Theme.showImgAlt.register();
 });
