@@ -1,6 +1,6 @@
-# @Author: NoRain 
-# @Date: 2022-11-13 19:16:10 
-# @Last Modified by:   NoRain 
+# @Author: NoRain
+# @Date: 2022-11-13 19:16:10
+# @Last Modified by:   NoRain
 # @Last Modified time: 2022-11-13 19:16:10
 
 #标签页
@@ -13,8 +13,8 @@ since: 2022
 #关于
 about:
   avatars: https://avatars.githubusercontent.com/u/66503849?v=4
-  name: 无雨
-  description: "你好，我是无雨，“今年咲いた向日葵(ひまわり) それが私なんです”"
+  name: 病雨
+  description: "你好，我是病雨，“今年咲いた向日葵(ひまわり) それが私なんです”"
   email: "d3V4aW5ydWZlbmdAcXEuY29t"
   site:
     s1: 1，为了一位朋友，

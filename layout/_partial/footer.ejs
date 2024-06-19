@@ -3,9 +3,7 @@
 	<div class="footer">
 		<div class="verse">山有木兮木有枝，心悦君兮君不知。</div>
 		<span class="copyright_year">
-			©️ <% let date = new Date() %> <% let year = date.getFullYear() %> <% if
-			(theme.since && theme.since != year) { %> <%= theme.since %>- <% }%> <%=
-			year %>
+			©️ <% let date = new Date() %> <% let year = date.getFullYear() %> <% if (theme.since && theme.since != year) { %> <%= theme.since %>- <% }%> <%= year %>
 			<span class="footer_author"><%= config.author %></span>
 			<span class="power_by">
 				Powered by
