@@ -41,20 +41,9 @@
 		height: auto;
 		margin: 0 auto;
 		// background-image: url("../img/bg.jpg");
-		.bg {
-			max-width: 100%;
+		#canvas{
+			width: 100%;
 			height: auto;
-			//透明度
-			opacity: 1;
-			/* 设置高斯模糊 */
-			// filter: blur(1px);
-		}
-		.avatars {
-			border-radius: 50%;
-			width: 10%;
-			min-width: 2rem;
-			position: absolute;
-			left: 45%;
 		}
 	}
 
