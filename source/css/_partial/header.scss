@@ -18,7 +18,7 @@
 		.title {
 			text-decoration: none;
 			color: $miku_color4;
-			font-size: 2rem;
+			font-size: 2.5rem;
 		}
 		position: relative;
 		float: left;
@@ -44,9 +44,9 @@
 	}
 
 	@include max-screen2() {
-		#nav_top {
-			display: none;
-		}
+		// #nav_top {
+		// 	display: none;
+		// }
 	}
 }
 .link-top {
