@@ -2,7 +2,7 @@
  * @Author: NoRain
  * @Date: 2024-06-19 16:38:25
  * @Last Modified by: NoRain
- * @Last Modified time: 2024-06-20 20:46:36
+ * @Last Modified time: 2024-06-21 11:46:36
  */
 (function () {
 	"use strict";
@@ -101,8 +101,8 @@
                 //-------------main----------------
                 let program;
                 let loadTexture = () => __awaiter(this, void 0, void 0, function* () {
-                    yield loader.loadTexture("../img/bg.jpg");
-                    yield loader.loadTexture("../img/bg_depth.jpg");
+                    yield loader.loadTexture("../img/lazymoon.jpg");
+                    yield loader.loadTexture("../img/lazymoon_depth.jpg");
                 });
                 let loadShader = () => __awaiter(this, void 0, void 0, function* () {
                     let vsSource = yield loader.loadShader("../shader/depth.vs.glsl");
@@ -112,13 +112,13 @@
                     program = shader.createProgram(gl, vertexShader, fragmentShader);
                 });
                 let dimensions = [1920, 1080, 1920, 1080]; //硬编码
-                let scale = 0.0215;
+                let scale = 0.0115;
                 let offset = [0.1, 0.1, 0.1];
-                let focus = 0.5;
-                let animateType = 1;
-                let shakeType = 0;
+                let focus = 0.01;
+                let shakeType = 2;
+                let rotY = 333 / 1920;
                 let animateScale = {
-                    x: 1,
+                    x: 0.95,
                     y: 0.95,
                     z: 0.95,
                     px: 0.9,
